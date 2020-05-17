@@ -11,7 +11,7 @@ class Footer extends Component {
               <tr>
                 <td>
                   <h3>Online</h3>
-                  <a className="footer-link" href="https://github.com/RichDoherty">GitHub</a>
+                  <a className="footer-link" href="https://github.com/RichDoherty" target="_blank">GitHub</a>
                 </td>
                 <td>
                   <h3>Contact</h3>

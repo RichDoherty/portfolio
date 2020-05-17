@@ -55,10 +55,14 @@
   color: #fff;
   font-weight: bold;
   text-decoration: none;
-  bottom: 20%;
+  bottom: 15%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%)
+}
+
+.scroll {
+  display: none;
 }
 
 #more-arrows {
@@ -95,18 +99,44 @@ polygon.arrow-top {
 /* Mobile Media Queries */
 @media screen and (max-width: 768px) {
   .intro-container::before {
-    height: 35%;
+    height: 30%;
   }
 
   .main-text {
     font-size: 2.5em;
+    letter-spacing: 3px;
   }
 
   .main-summary {
     font-size: 1.5em;
   }
 
+  .projects-scroll {
+    margin-top: 10%;
+  }
+
   .scroll-text {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+
+  .scroll {
+    display: block;
+    text-align: center;
+  }
+
+  .click {
+    display: none;
+  }
+
+  #more-arrows {
+    margin: 0 39%;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  #more-arrows {
     display: none;
   }
 }

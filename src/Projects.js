@@ -26,10 +26,10 @@ class Projects extends Component {
               </p>
             </div>
               <div className="links">
-                <a href="https://richdoherty.github.io/Vulfpeck/index.html">
+                <a href="https://richdoherty.github.io/Vulfpeck/index.html" target="_blank">
                   View Project
                 </a>
-                <a href="https://github.com/RichDoherty/Vulfpeck">
+                <a href="https://github.com/RichDoherty/Vulfpeck" target="_blank">
                   View Code
                 </a>
               </div>

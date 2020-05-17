@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://RichDoherty.github.io/Portfolio"
+  "homepage": "http://RichDoherty.github.io/portfolio",
   "dependencies": {
     "jquery": "^3.5.1",
     "react": "^16.13.1",
@@ -13,7 +13,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "Portfolio -d build"
+    "deploy": "portfolio -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

@@ -14,7 +14,7 @@ class Projects extends Component {
               <h1>Vulpeck Fan-Site</h1>
               <div className="img-shadow">
                 <div className="img-border">
-                  <img className="project-img" src="/img/vulf-site.png" alt="A screenshot of my Vulpeck fan site." />
+                  <img className="project-img" src="../img/vulf-site.png" alt="A screenshot of my Vulpeck fan site." />
                 </div>
               </div>
             </div>

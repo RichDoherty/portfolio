@@ -165,5 +165,5 @@ span.menu-toggle:focus {
 
 @font-face {
   font-family: "MagmaWave";
-  src: url("/fonts/magmawave caps.otf");
+  src: url("../public/fonts/MagmaWave Caps.otf");
 }

@@ -1,0 +1,132 @@
+.project-container {
+  width: 80%;
+  padding-top: 10%;
+  margin: 0 10% 0 10%;
+}
+
+.project-card {
+  color: inherit;
+  padding: 10px;
+  margin: 10px 10px 30px 10px;
+  background: #1E1544;
+  color: #fff;
+  filter: drop-shadow(0px 5px 5px #110933);
+}
+
+.project-name {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.project-name > h1 {
+  font-family: 'Geomancy';
+  color: #fff;
+  text-transform: uppercase;
+  filter: drop-shadow(2px 2px #F65DAD);
+}
+
+.project-img {
+  display: block;
+  width: 360px;
+  height: 180px;
+  border: solid #1E1544 4px;
+  filter: drop-shadow(-4px -4px #28D3E0);
+}
+
+.img-border {
+  filter: drop-shadow(4px 4px #F65DAD);
+}
+
+.img-shadow {
+  filter: drop-shadow(0px 10px 5px #110933);
+}
+
+.project-description {
+  float: right;
+  position: relative;
+  display: block;
+  top: 20px;
+  right: 2%;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10%;
+  right: 2%;
+}
+
+.links > a {
+  background-color: #1E1544;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border: solid #fff 2px;
+  filter: drop-shadow(6px 6px 5px #110933);
+}
+
+.links > a:hover {
+  opacity: 0.75;
+  transition: opacity 0.2s ease-out;
+}
+
+/* Mobile Media Queries */
+@media screen and (max-width: 768px) {
+  .project-container {
+    width: 90%;
+    padding-top: 10%;
+    margin: 0 5% 0 5%;
+  }
+
+  .project-card {
+    margin: 10px 10px 30px 10px;
+  }
+
+  .project-name {
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  .project-name > h1 {
+    font-size: 1.75em;
+  }
+
+  .project-img {
+    margin: 0 auto;
+    width: 70%;
+    height: 70%;
+  }
+
+  .project-description {
+    float: none;
+    position: relative;
+    display: block;
+    top: 0;
+    right: 0;
+  }
+
+  .project-description > p {
+    text-align: center;
+    padding: 5% 0;
+  }
+
+  .links {
+    position: static;
+    font-size: 0.875em;
+    width: 100%;
+    margin: 5% 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .links > a {
+    width: 40%;
+    margin: 0 5%;
+  }
+}

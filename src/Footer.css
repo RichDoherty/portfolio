@@ -1,0 +1,52 @@
+#contact {
+  background-color: #110933;
+  padding: 7.5em 0 7.5em 0;
+}
+
+table {
+  width: 80%;
+  margin: 0 10% 0 10%;
+}
+
+td {
+  width: 50%;
+}
+
+td > p {
+  margin: 0;
+}
+
+.footer-content {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  opacity: 0.75;
+  transition: opacity 0.2s ease-out;
+}
+
+#mobile-footer {
+  display: none;
+}
+
+/* Mobile Media Queries */
+@media screen and (max-width: 768px) {
+  #contact {
+    padding: 3em 0 5em 0;
+  }
+
+  #desktop-footer {
+    display: none;
+  }
+  #mobile-footer {
+    display: block;
+  }
+}

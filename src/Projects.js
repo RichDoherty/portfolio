@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Vulf from './img/vulf-site.png'
+import Vulf from './img/vulf-site.png';
+import JpFlashcards from './img/jp-flashcards.png';
 import './Projects.css';
 
 class Projects extends Component {
@@ -9,6 +10,32 @@ class Projects extends Component {
         <div id="projects"></div>
 
         <div className="project-container">
+        <div className="project-card">
+
+          <div className="project-name">
+            <h1>Japanese Flashcards</h1>
+            <div className="img-shadow">
+              <div className="img-border">
+                <img className="project-img" src={JpFlashcards} alt="Project 2." />
+              </div>
+            </div>
+          </div>
+
+          <div className="project-description">
+            <p>
+              An app to help people study Japanese, specifically <br /> Hiragana and Katakana, with the use of flashcards.
+            </p>
+          </div>
+            <div className="links">
+              <a href="https://richdoherty.github.io/japanese-flashcards/" target="_blank">
+                View Project
+              </a>
+              <a href="https://github.com/RichDoherty/japanese-flashcards" target="_blank">
+                View Code
+              </a>
+            </div>
+        </div>
+
           <div className="project-card">
 
             <div className="project-name">
@@ -30,32 +57,6 @@ class Projects extends Component {
                   View Project
                 </a>
                 <a href="https://github.com/RichDoherty/Vulfpeck" target="_blank">
-                  View Code
-                </a>
-              </div>
-          </div>
-
-          <div className="project-card">
-
-            <div className="project-name">
-              <h1>Project 2</h1>
-              <div className="img-shadow">
-                <div className="img-border">
-                  <img className="project-img" src="" alt="Project 2." />
-                </div>
-              </div>
-            </div>
-
-            <div className="project-description">
-              <p>
-                Second project goes here.
-              </p>
-            </div>
-              <div className="links">
-                <a href="">
-                  View Project
-                </a>
-                <a href="">
                   View Code
                 </a>
               </div>

@@ -50,6 +50,11 @@
   right: 2%;
 }
 
+.project-description p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
 .links {
   display: flex;
   justify-content: space-between;

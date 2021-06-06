@@ -29,6 +29,9 @@ body {
   --main-color: #ffffff;
   --text-color: #f73131;
   --project-text-color: #ffffff;
+
+  --font: "Montserrat";
+  --main-font: "Montserrat";
 }
 
 body.dark-theme img {
@@ -56,5 +59,8 @@ body.dark-theme img {
     --main-color: #ffffff;
     --text-color: #f73131;
     --project-text-color: #ffffff;
+
+    --font: "Montserrat";
+    --main-font: "Montserrat";
   }
 }

@@ -110,6 +110,7 @@ polygon.arrow-top {
   .main-text {
     font-size: 2.5em;
     letter-spacing: 3px;
+    filter: drop-shadow(2px 2px var(--text-color));
   }
 
   .main-summary {
@@ -145,15 +146,3 @@ polygon.arrow-top {
     display: none;
   }
 }
-
-@font-face {
-  font-family: "Geomancy";
-  src: url("./fonts/Geomancy-ExtraBold.otf");
-}
-
-/*
-palettes {
-  Retro Dark: #fff, var(--sub-color), #1E1544
-  Miami Vice: var(--main-color), #ED5AA8, #2D2E8B, #F7F7F7
-}
-*/

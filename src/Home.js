@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './Home.css';
+import './style.css';
 
 class Home extends Component {
   render() {
     return (
       <div id="intro" className="intro-container">
         <header className="intro-header">
-          <h1 className="main-text">Looking for a Web Developer?</h1>
-          <h2 className="main-summary">I am a Designer / Front-end Developer living in New York.</h2>
+          <h1 id="main" className="main-text">Richard Doherty</h1>
+          <h2 className="main-summary">I am a software engineer based in New York.</h2>
         </header>
         <div className="projects-scroll">
           <a className="scroll-text" href="#projects">

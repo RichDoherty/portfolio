@@ -8,9 +8,9 @@
   color: inherit;
   padding: 10px;
   margin: 10px 10px 30px 10px;
-  background: #1E1544;
-  color: #fff;
-  filter: drop-shadow(0px 5px 5px #110933);
+  background: var(--bg-color);
+  color: var(--project-text-color);
+  filter: drop-shadow(0px 5px 5px var(--sub-color));
 }
 
 .project-name {
@@ -20,33 +20,33 @@
 }
 
 .project-name > h1 {
-  font-family: 'Geomancy';
-  color: #fff;
-  text-transform: uppercase;
-  filter: drop-shadow(2px 2px #F65DAD);
+  font-family: var(--main-font);
+  color: var(--project-text-color);
+  filter: drop-shadow(2px 2px var(--sub-color));
 }
 
 .project-img {
   display: block;
   width: 360px;
   height: 180px;
-  border: solid #1E1544 4px;
-  filter: drop-shadow(-4px -4px #28D3E0);
+  border: solid var(--bg-color) 4px;
+  filter: drop-shadow(-4px -4px var(--main-color)) /* grayscale(100%) */;
+  transition: filter 0.2s ease-in;
 }
 
 .img-border {
-  filter: drop-shadow(4px 4px #F65DAD);
+  filter: drop-shadow(4px 4px var(--text-color));
 }
 
 .img-shadow {
-  filter: drop-shadow(0px 10px 5px #110933);
+  filter: drop-shadow(0px 10px 5px var(--sub-color));
 }
 
 .project-description {
   float: right;
   position: relative;
   display: block;
-  top: 20px;
+  top: 35px;
   right: 2%;
 }
 
@@ -61,26 +61,48 @@
   position: absolute;
   bottom: 10%;
   right: 2%;
+  font-family: var(--font);
 }
 
 .links > a {
-  background-color: #1E1544;
-  color: #fff;
+  background-color: var(--bg-color);
+  color: var(--project-text-color);
   text-decoration: none;
   text-align: center;
   padding: 10px;
   margin: 10px;
-  border: solid #fff 2px;
-  filter: drop-shadow(6px 6px 5px #110933);
+  border: solid var(--text-color) 2px;
+  filter: drop-shadow(6px 6px 5px var(--sub-color));
+  transition: opacity 0.15s;
 }
 
 .links > a:hover {
   opacity: 0.75;
   transition: opacity 0.2s ease-out;
 }
+/*
+.project-card:hover .project-img {
+  filter: drop-shadow(-4px -4px var(--main-color)) grayscale(0%);
+  transition: filter 0.2s ease-out;
+}
+*/
+/* Media Queries*/
+@media screen and (max-width: 1140px) and (min-width: 1021px) {
+  .project-description p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 1020px) and (min-width: 971px) {
+  .project-description p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
 
 /* Mobile Media Queries */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 970px) {
   .project-container {
     width: 90%;
     padding-top: 10%;
@@ -109,6 +131,8 @@
   }
 
   .project-description {
+    font-size: 20px;
+    line-height: 30px;
     float: none;
     position: relative;
     display: block;

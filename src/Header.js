@@ -1,8 +1,19 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import './Header.css';
+import './style.css';
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      prefersDarkScheme: window.matchMedia("(prefers-color-scheme: dark)"),
+      currentTheme: localStorage.getItem("theme"),
+    };
+
+    this.toggleTheme = this.toggleTheme.bind(this);
+  }
   componentDidMount() {
     $('.menu-toggle').on('click', function() {
         $('#nav-ul').toggleClass('open');
@@ -15,6 +26,10 @@ class Header extends Component {
     $('#nav-ul').on('click', function(e) {
       e.stopPropagation();
     })
+  }
+
+  toggleTheme() {
+
   }
 
   render() {

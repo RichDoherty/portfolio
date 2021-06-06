@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=IBM+Plex+Sans:wght@600&family=Inconsolata&family=Roboto+Mono&family=Source+Code+Pro&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.original {
+  --bg-color: #1E1544;
+  --main-color: #28D3E0;
+  --caret-color: #110933;
+  --sub-color: #F65DAD;
+  --text-color: #fff;
+}
+
+body.dark-theme {
+  --bg-color: #080808;
+  --caret-color: #020202;
+  --sub-color: #000;
+  --main-color: #98bdd6;
+  --text-color: #f73131;
+  --project-text-color: #bbe1fa;
+
+  --font: "Montserrat";
+  --main-font: "Montserrat";
+}
+
+body {
+  --bg-color: #98bdd6;
+  --caret-color: #6890ac;
+  --sub-color: #6890ac;
+  --main-color: #ffffff;
+  --text-color: #f73131;
+  --project-text-color: #ffffff;
+}
+
+body.dark-theme img {
+  filter: drop-shadow(-4px -4px var(--main-color)) brightness(.8) contrast(1.2);
+}
+
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body {
+    --bg-color: #080808;
+    --caret-color: #020202;
+    --sub-color: #000;
+    --main-color: #98bdd6;
+    --text-color: #f73131;
+    --project-text-color: #bbe1fa;
+  
+    --font: "Montserrat";
+    --main-font: "Montserrat";
+  }
+  
+  body.light-theme {
+    --bg-color: #98bdd6;
+    --caret-color: #6890ac;
+    --sub-color: #6890ac;
+    --main-color: #ffffff;
+    --text-color: #f73131;
+    --project-text-color: #ffffff;
+  }
+}

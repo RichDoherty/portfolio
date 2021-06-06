@@ -1,5 +1,5 @@
 #contact {
-  background-color: #110933;
+  background-color: var(--sub-color);
   padding: 7.5em 0 7.5em 0;
 }
 
@@ -20,11 +20,11 @@ td > p {
   margin: 0 auto;
   width: 90%;
   text-align: center;
-  color: #fff;
+  color: var(--main-color);
 }
 
 .footer-link {
-  color: #fff;
+  color: var(--main-color);
   text-decoration: none;
 }
 

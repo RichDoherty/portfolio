@@ -5,17 +5,17 @@
 }
 
 #header {
-  background: #1E1544;
-  color: #fff;
-  filter: drop-shadow(0px 5px 5px #110933);
+  background: var(--bg-color);
+  color: var(--main-color);
+  filter: drop-shadow(0px 5px 5px var(--sub-color));
 }
 
 #header h1 {
-  font-family: "MagmaWave";
-  font-size: 2em;
+  font-family: var(--font);
+  font-size: 1.75em;
   letter-spacing: 1px;
   margin-bottom: 10%;
-  filter: drop-shadow(2px 2px #F65DAD);
+  filter: drop-shadow(2px 2px var(--sub-color));
 }
 
 #header h2 {
@@ -27,7 +27,7 @@
 header .group {
   position: relative;
   margin: 0 5% 0 5%;
-  padding: 2% 2% 0px 2%;
+  padding: 1% 2% 0px 2%;
 }
 
 .header-name {
@@ -47,11 +47,13 @@ header .group {
 }
 
 nav {
+  font-family: var(--main-font);
+  letter-spacing: 1px;
   clear: none;
   display: block;
   position: relative;
   float: right;
-  top: 7px;
+  top: -3px;
 }
 
 #nav-ul {
@@ -68,10 +70,11 @@ li > .nav-option {
   color: inherit;
   font-size: 0.875em;
   font-weight: bold;
-  text-transform: uppercase;
   text-decoration: none;
+  text-transform: lowercase;
   padding: 1em 2em 2em 2em;
   margin-top: 2em;
+  transition: opacity 0.3s;
 }
 
 li > .nav-option::before {
@@ -81,7 +84,7 @@ li > .nav-option::before {
   bottom: 0;
   left: 0;
   height: 2px;
-  background-color: #fff;
+  background-color: var(--text-color);
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
@@ -103,8 +106,8 @@ span.menu-toggle {
   position: absolute;
   right: 12px;
   bottom: 18px;
-  color: #fff;
-  filter: drop-shadow(1px 1px #F65DAD);
+  color: var(--text-color);
+  filter: drop-shadow(1px 1px var(--sub-color));
 }
 
 span.menu-toggle:hover,
@@ -113,7 +116,7 @@ span.menu-toggle:focus {
 }
 
 /* Mobile Media Queries */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   #header h1 {
     font-size: 1.25em;
   }
@@ -125,7 +128,7 @@ span.menu-toggle:focus {
   }
 
   #nav {
-    background-color: #1E1544;
+    background-color: var(--bg-color);
     position: static;
     width: 100%;
     text-align: center;

@@ -18,21 +18,20 @@
 
 .intro-header {
   text-align: center;
-  color: #28D3E0;
+  color: var(--main-color);
 }
 
 .main-text {
-  font-family: 'Geomancy';
-  font-size: 4em;
-  color: #fff;
-  text-transform: uppercase;
-  filter: drop-shadow(4px 4px #F65DAD);
+  font-family: var(--main-font);
+  font-size: 5em;
+  color: var(--main-color);
+  filter: drop-shadow(4px 4px var(--text-color));
 }
 
 .main-summary {
   font-size: 2em;
   font-style: italic;
-  filter: drop-shadow(1px 1px 1px #fff);
+  filter: drop-shadow(2px 2px var(--sub-color));
 }
 
 .projects-scroll:hover {
@@ -52,13 +51,19 @@
 
 .scroll-text {
   position: absolute;
-  color: #fff;
+  color: var(--main-color);
   font-weight: bold;
   text-decoration: none;
   bottom: 15%;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%)
+  transform: translateX(-50%);
+  transition: color .2s;
+}
+
+.scroll-text:hover {
+  color: var(--text-color);
+  transition: color .2s;
 }
 
 .scroll {
@@ -70,8 +75,8 @@
   width: 75px;
   height: 65px;
 }
-#more-arrows:hover polygon {
-  fill: #FFF;
+.scroll-text:hover polygon {
+  fill: var(--text-color);
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
 }
@@ -85,7 +90,7 @@
 }
 
 polygon {
-  fill: #FFF;
+  fill: var(--main-color);
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
 }
@@ -148,7 +153,7 @@ polygon.arrow-top {
 
 /*
 palettes {
-  Retro Dark: #fff, #F65DAD, #1E1544
-  Miami Vice: #28D3E0, #ED5AA8, #2D2E8B, #F7F7F7
+  Retro Dark: #fff, var(--sub-color), #1E1544
+  Miami Vice: var(--main-color), #ED5AA8, #2D2E8B, #F7F7F7
 }
 */
